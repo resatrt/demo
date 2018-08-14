@@ -1,0 +1,75 @@
+body{
+    background: black;
+    color: white;
+    margin: 0;/* 去掉body自带的边框宽度*/
+
+}
+a{
+    color: inherit;/* 继承上级属性*/
+    text-decoration: none;/* 去掉下面标线*/
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top-Nav-Bar{
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 16px;
+    padding-right: 16px;
+    /*等价于padding:20px 16px 20px 16px (按照上右下左的顺时针方式) */
+}
+
+.top-Nav-Bar>nav{
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+
+.top-Nav-Bar>nav>ul{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.top-Nav-Bar>nav>ul>li{
+    float: left;  /*向左浮动*/
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.top-Nav-Bar>nav>ul>li>a{
+    font-size: 12px;
+    color: #B7B7B7; 
+    font-weight: bold;
+    border-top: 3px solid transparent;/*边框隐身*/
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block; /* 将a元素转换为块级元素，此处用于导航条的排列*/
+}
+
+.top-Nav-Bar>nav>ul>li>a:hover{
+    border-bottom: 3px solid #e06567;
+
+}
+
+.top-Nav-Bar .logo{
+    font-size: 24px;
+    font-family: "Arial Blcak";
+    padding-top: 6px;
+    padding-bottom: 3px;
+
+}
+
+.top-Nav-Bar .logo .rs{ 
+    margin-right: 4px;
+    color: #E6686A;
+
+}
+
+.top-Nav-Bar .logo .card{
+    color: #9A9DA2;
+}
