@@ -91,7 +91,7 @@ hr{
 }
 
 .banner{
-    background-image: url(./rs-cover-1.jpg);
+    background-image: url(https://resatrt.github.io/demo/rs-cover-1.jpg);
     height: 515px;
     background-position:center center;/* X和Y居中*/
     background-size: cover; /*盖住背景所有的面积按比例缩放*/
